@@ -4,6 +4,11 @@
 
 - The minimum supported Rust version has been increased to 1.88.0.
 
+### Bug Fixes
+
+- Fixed a panic in `Sequential::new_tree` when the sampled sequence size is 0,
+  for example with a `0..10` size range.
+
 ## 0.8.0
 
 - Added Send + Sync bounds to `strategy:Sequential` ([\#640](https://github.com/proptest-rs/proptest/pull/640))
